@@ -1,0 +1,17 @@
+MIN_EXP_DRAFTING = 3
+MIN_PAGE_LAYOUT_YEARS = 1
+
+adobe_exp = int(input('How long have you been drafting?: '))
+wp_years = int(input('How long have you been doing page layout?: '))
+
+if adobe_exp >= MIN_EXP_DRAFTING and wp_years >= MIN_PAGE_LAYOUT_YEARS:
+    print("Please submit your application; let's talk!")
+else:
+    print(f'''
+           We are looking for someone with at least:
+           * {MIN_EXP_DRAFTING} years of drafting experience
+           * {MIN_PAGE_LAYOUT_YEARS} year of layout experience 
+
+           Checkout our website at https://alprintpros.com/jobs
+           for other opportunities at A-1 Print Pros!
+           ''')

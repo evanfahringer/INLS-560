@@ -1,0 +1,19 @@
+# Constants for Weather
+TEMP_LOW = 2
+TEMP_HIGH = 1
+
+# User's provided data:
+years_sales = int(input('Enter your years of sales experience: '))
+years_top_award = int(input('Enter how many years you have been salesperson of the year: ')) # any error would be user error in this case.
+
+if years_sales > TEMP_LOW and years_top_award > TEMP_HIGH:
+    print('The weather is excellent today.')
+else:
+# Multi-line with f-string
+    print(f"""
+Sorry, you do not meet the requirements for the Sales Manager. 
+          
+You need at least:
+- {TEMP_LOW} years of sales experience
+- {TEMP_HIGH} years as salesperson of the year
+""")
