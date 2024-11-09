@@ -6,7 +6,7 @@ MIN_YEARS_LIFEGUARDING = 3
 age = int(input('Enter your age: '))
 lg_experience = int(input('Enter how many years you have been a lifeguard: ')) # any error would be user error in this case.
 
-if age > MIN_AGE and lg_experience > MIN_YEARS_LIFEGUARDING:
+if age >= MIN_AGE and lg_experience >= MIN_YEARS_LIFEGUARDING:
     print('You are eligible the Lifeguard Position.')
 else:
 # Multi-line with f-string
